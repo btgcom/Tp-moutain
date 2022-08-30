@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Merriweather:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img-bkg {
+  background-image: url(../assets/img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  padding: 255px 0 25px;
+  max-width: 60%;
+  letter-spacing: 0.8rem;
+  margin: auto;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  width: 50%;
+  text-align: center;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "Inter";
+  letter-spacing: 3px;
+  width: 35%;
+  margin: auto;
+  margin: 0 auto 20px;
+}
+
+p {
+  font-family: "Merriweather", serif;
+  line-height: 2rem;
+  text-align: center;
+  color: #111111;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  font-family: "Inter";
+  text-transform: uppercase;
+  padding: 15px 30px;
+  letter-spacing: 3px;
+  background: none;
+  border: 2px solid #000;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+header p {
+  text-align: center;
+  color: white;
+}
+header .head {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+header .head .head-scroll {
+  margin: 0;
+  color: white;
+  margin: 75px auto;
+  display: flex;
+  justify-content: center;
+}
+header .head .head-scroll .fa-solid {
+  font-size: 1.4rem;
+  border: 2px solid white;
+  padding: 25px 28px;
+  border-radius: 600px;
+}
+header .absolute {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  max-width: 80%;
+}
+header .absolute nav {
+  max-width: 100%;
+  display: flex;
+  width: 1380px;
+  margin: 0 auto;
+  margin: 0 0 0 1px;
+  background: rgba(255, 255, 255, 0.4);
+}
+header .absolute nav .nav-left {
+  display: flex;
+  width: 50%;
+}
+header .absolute nav .nav-left ul {
+  display: flex;
+}
+header .absolute nav .nav-left ul li {
+  cursor: pointer;
+  font-family: "Inter";
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: white;
+}
+header .absolute nav .nav-left ul li:nth-child(1) {
+  background: #f3f3f3;
+  color: #111111;
+}
+header .absolute nav .nav-left ul li .btn {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+header .absolute nav .nav-left ul li .btn:hover {
+  background: white;
+}
+header .absolute nav .nav-left ul li:hover {
+  background: white;
+  color: #111111;
+}
+header .absolute nav .nav-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+header .absolute nav .nav-right ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+header .absolute nav .nav-right ul li {
+  margin: 0 40px;
+}
+
+section {
+  width: 1380px;
+  margin: 0 auto;
+  background: white;
+  margin: auto;
+  max-width: 80%;
+  text-align: center;
+}
+section .main-date {
+  font-size: 1.1rem;
+  padding: 85px 0;
+  letter-spacing: 2px;
+  color: rgb(40, 40, 40);
+}
+section .main-date:before {
+  border-top: 1px solid #e4e4e4;
+  display: block;
+  position: relative;
+  top: 10px;
+  left: -20%;
+  margin: 0 auto;
+  width: 20%;
+  content: "";
+}
+section .main-date:after {
+  border-top: 1px solid #e4e4e4;
+  display: block;
+  position: relative;
+  top: -10px;
+  left: 20%;
+  margin: 0 auto;
+  width: 20%;
+  content: "";
+}
+section .main-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+}
+section .main-description .h2 {
+  max-width: 70%;
+}
+section .main-description p {
+  max-width: 60%;
+  margin: 70px auto 60px;
+}
+section .main-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .main-img img {
+  display: flex;
+  max-width: 1100px;
+  max-width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-article button {
+  margin: 65px 0 75px;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.main-article button:hover {
+  background: black;
+  color: white;
+}
+.main-article:after {
+  border-bottom: 1px solid #e4e4e4;
+  display: block;
+  position: relative;
+  bottom: 0px;
+  margin: 0 auto;
+  width: 100%;
+  content: "";
+}
+
+.secondary-article {
+  display: flex;
+  max-width: 90%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 80px auto 40px;
+}
+.secondary-article .secondary-date {
+  margin: 0 0 40px 0;
+}
+.secondary-article .btn-article {
+  position: absolute;
+}
+.secondary-article .btn-article button {
+  position: relative;
+  bottom: 0;
+}
+.secondary-article img {
+  width: 80%;
+}
+.secondary-article p {
+  width: 80%;
+  margin: 40px auto;
+  text-align: left;
+}
+.secondary-article .btn-article {
+  position: relative;
+  bottom: 0;
+  transition: 0.4s ease;
+  margin-bottom: 50px;
+}
+.secondary-article .btn-article button {
+  cursor: pointer;
+}
+.secondary-article .btn-article button:hover {
+  background: black;
+  color: white;
+}
+
+footer {
+  width: 1380px;
+  margin: 0 auto;
+  max-width: 80%;
+}
+footer .contacts {
+  padding: 45px 0;
+  background: #e9e9e9;
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Inter";
+  color: #4f4f4f;
+}
+footer .form-left {
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  font-size: 0.8rem;
+}
+footer .form-left form {
+  width: 60%;
+  margin: 0 20%;
+  display: grid;
+}
+footer .form-left form label {
+  margin-bottom: 15px;
+}
+footer .form-left form input {
+  border: 1px solid #4f4f4f;
+  background: none;
+  height: 40px;
+  margin-bottom: 40px;
+  border-radius: 3px;
+}
+footer .form-left form textarea {
+  border: 1px solid #4f4f4f;
+  background: none;
+  margin-bottom: 40px;
+  border-radius: 3px;
+}
+footer .form-left form #send {
+  margin: auto;
+}
+footer .form-left form #send #submit {
+  text-transform: uppercase;
+  font-family: "Inter";
+  padding: 15px 30px;
+  letter-spacing: 3px;
+  background: none;
+  border: 2px solid #000;
+  height: auto;
+}
+
+.right-contacts {
+  text-transform: uppercase;
+  grid-template-columns: 100%;
+  width: 80%;
+  display: grid;
+  align-items: center;
+  font-family: "Meriweather";
+}
+.right-contacts .contact {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.right-contacts .contact:after {
+  display: grid;
+  align-items: baseline;
+  border-top: 1px solid #000;
+  width: 100%;
+  content: "";
+}/*# sourceMappingURL=index.css.map */

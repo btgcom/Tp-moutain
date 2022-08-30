@@ -1,0 +1,76 @@
+footer{
+    @include container;
+    max-width: 80%;
+    
+    .contacts{
+    padding: 45px 0;
+    background: #e9e9e9;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Inter";
+    color: #4f4f4f;
+    }
+    .form-left{
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        font-size: 0.8rem;
+    form{
+    width: 60%;
+    margin: 0 20% ;
+    display: grid;
+       
+            label{
+                margin-bottom: 15px;
+            }
+            input {
+                border: 1px solid #4f4f4f;
+                background: none;
+                height: 40px;
+                margin-bottom: 40px;
+                border-radius: 3px;
+            }
+            textarea{
+                border: 1px solid #4f4f4f;
+                background: none;
+                margin-bottom: 40px;
+                border-radius: 3px;
+
+            }
+            #send{
+                margin:  auto  ;
+                #submit{
+                    text-transform: uppercase;
+                    font-family: "Inter";
+                    padding: 15px 30px;
+                    letter-spacing: 3px;
+                    background: none;
+                    border: 2px solid #000;
+                    height: auto;
+
+                }
+            }
+        }
+    }
+}
+.right-contacts{
+    text-transform: uppercase;
+    grid-template-columns: 100%;
+    width: 80%;
+    display: grid;
+    align-items: center;
+
+    font-family: "Meriweather";
+    .contact{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        &:after{
+            display: grid;
+            align-items: baseline;
+            border-top: 1px solid #000;
+
+                width: 100%;
+                content: "";
+        }
+    }
+
+}

@@ -1,0 +1,99 @@
+header{
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+   
+    p{
+        text-align: center;
+        color: white;
+    }
+    .head{
+        
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+ 
+        .head-scroll{
+        margin: 0;
+        color: white;
+        margin: 75px auto;
+        display: flex;
+        justify-content: center;
+       
+        .fa-solid{
+            font-size: 1.4rem;
+            border: 2px solid white;
+            padding: 25px 28px;
+            border-radius: 600px;
+        }
+    }
+}
+.absolute{
+    position: absolute;
+
+    bottom: 0px;
+    display: flex; 
+    justify-content: center;
+    max-width: 80%;
+
+nav{
+    max-width: 100%;
+    display: flex;
+    @include container;
+    margin: 0 0 0 1px;
+    background: rgba($color: #fff, $alpha: .4);
+
+    .nav-left{
+        display: flex;
+        width: 50%;
+        ul{
+            display: flex;
+            li{
+               
+                cursor: pointer;
+                font-family: "Inter";
+                font-size: 0.8rem;
+                letter-spacing: 0.1rem;
+                text-transform: uppercase;
+                color: white;
+                &:nth-child(1){
+                    background : #f3f3f3;
+                    color: #111111;
+                }
+
+                .btn{
+                    height: 80px;
+                    display: flex;
+                    align-items: center;
+                    margin: 0 20px;
+                    &:hover{
+                        background: white;}
+                }
+                &:hover{
+                    background: white;
+                    color: #111111;
+                }
+            }
+        }
+
+    }
+
+    .nav-right{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        color: white;
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        li{
+            margin: 0 40px;
+        }    
+        }
+}
+    
+}
+}
+}
