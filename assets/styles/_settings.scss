@@ -1,5 +1,5 @@
 @font-face {
-    font-family:"Inter-bold" ;
+    font-family:"Inter" ;
     src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
     font-weight: 900;
 }
@@ -8,7 +8,7 @@
     src: url(../fonts/Merriweather-Light.ttf);
 }
 
-$font1: inter-bold, sans-serif;
+$font1: inter, sans-serif;
 $font2: merri, serif;
 $black1: rgb(17,17,17);
 $white1: rgb(243,243,243);
@@ -29,4 +29,46 @@ $grey3: rgb(105,105,105);
 }
 html{
     scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+a, a:visited{
+    color: $white1;
+}
+body{
+    background: url(../img/bg.jpg) fixed center/cover;
+    text-align: center;
+    font-family: $font2;
+    max-width: 1300px;
+    margin: 0 auto;
+    &:before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: $black1;
+        animation: animBefore 1.5s ease forwards;
+        animation-delay: 0.15s;
+        @keyframes animBefore{
+            to{
+                opacity: 0;
+            }
+        }
+    }
+}
+.btn{
+    background: none;
+    border: 2px solid $black1;
+    height: 45px;
+    width: 170px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: 0.2s;
+    @include title;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
